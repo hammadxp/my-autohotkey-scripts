@@ -1,6 +1,3 @@
-;Ctrl Key ^  |  Shift Key +  |  Alt Key !  |  Windows Key #
-
-
 class BrightnessSetter {
 	; qwerty12 - 27/05/17
 	; https://github.com/qwerty12/AutoHotkeyScripts/tree/master/LaptopBrightnessSetter

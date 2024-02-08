@@ -1,9 +1,4 @@
-﻿;Ctrl Key ^  |  Shift Key +  |  Alt Key !  |  Windows Key #
-
-
-; #If (!WinActive("ahk_exe excel.exe"))
-
-Clipboard =
+﻿Clipboard =
 OnClipboardChange:
 If A_EventInfo = 1
 {

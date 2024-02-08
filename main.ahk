@@ -11,32 +11,29 @@ global moments_folder := "C:\ForeverYours\Screenshots\Screenshots (Moments)"
 
 #Include C:\ForeverYours\Coding\Scripts\AutoHotKey
 
-#Include [C] Backslash.ahk
-#Include [C] Caps Lock.ahk
-#Include [C] Dot.ahk
-#Include [C] F Keys.ahk
-#Include [C] LAlt.ahk
-;#Include [C] LCtrl LShift.ahk
-#Include [C] LCtrl LAlt.ahk
-#Include [C] Playback.ahk
-#Include [C] RAlt.ahk
-#Include [C] RCtrl.ahk
-#Include [C] RShift.ahk
-;#Include [C] RShift (F4).ahk
-#Include [C] Tab.ahk
-#Include [C] Win.ahk
+#Include (C) Backslash.ahk
+#Include (C) Caps Lock.ahk
+#Include (C) Dot.ahk
+#Include (C) F Keys.ahk
+#Include (C) LAlt.ahk
+#Include (C) LCtrl.ahk
+#Include (C) LShift.ahk
+#Include (C) Playback.ahk
+#Include (C) RAlt.ahk
+#Include (C) RCtrl.ahk
+#Include (C) RShift.ahk
+#Include (C) Tab.ahk
+#Include (C) Win.ahk
 
-#Include [M] Brightness.ahk
-;#Include [M] Clipboard History.ahk
-;#Include [M] Toggle (Dark Mode).ahk
-#Include [M] Toggle (Hidden Files).ahk
-;#Include [M] Run Without Admin.ahk
+#Include (M) Brightness.ahk
+;#Include (M) Clipboard History.ahk
+;#Include (M) Run Without Admin.ahk
+;#Include (M) Toggle (Dark Mode).ahk
+;#Include (M) Toggle (Hidden Files).ahk
 
-;#Include [O] brightness and volume.ahk
-#Include [O] hj.ahk
-;#Include [O] move screenshots (selected).ahk
-#Include [O] pange.ahk
-#Include [O] screenshot.ahk
-#Include [O] youtube-dl.ahk
+;#Include (O) Brightness and Volume.ahk
+#Include (O) Test.ahk
+#Include (O) Word Shortcuts.ahk
+#Include (O) youtube-dl.ahk
 
 ; ---

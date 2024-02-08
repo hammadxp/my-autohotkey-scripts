@@ -1,7 +1,4 @@
-;Ctrl Key ^  |  Shift Key +  |  Alt Key !  |  Windows Key #
-
-
-;F6::
+; F6::
 	RootKey = HKCU
 	SubKey  = SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize
 	

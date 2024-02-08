@@ -1,7 +1,5 @@
-;Ctrl Key ^  |  Shift Key +  |  Alt Key !  |  Windows Key #
-
-
-F7::GoSub,CheckActiveWindow
+F7::
+	GoSub,CheckActiveWindow
 
 	CheckActiveWindow:
 	ID := WinExist("A")
