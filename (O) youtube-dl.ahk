@@ -109,12 +109,12 @@ CapsLock & 0::
 ; --- Expand Text
 
 ::480pp::
-	youtube-dl -f "bestvideo[height<=480][ext=mp4]{+}bestaudio[ext=m4a]"
+	SendInput, youtube-dl -f "bestvideo[height<=480][ext=mp4]{+}bestaudio[ext=m4a]"
 	return
 
 
 ::1080pp::
-	youtube-dl -f "bestvideo[height<=1080][ext=mp4]{+}bestaudio[ext=m4a]"
+	SendInput, youtube-dl -f "bestvideo[height<=1080][ext=mp4]{+}bestaudio[ext=m4a]"
 	return
 
 ; ---

@@ -1,7 +1,7 @@
 ; ---
 
 #Include C:\ForeverYours\Coding\Scripts\AutoHotKey
-#Include [M] Brightness.ahk
+#Include (M) Brightness.ahk
 
 ; --- RCtrl + Playback
 

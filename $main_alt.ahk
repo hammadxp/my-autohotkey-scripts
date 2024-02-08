@@ -346,7 +346,7 @@ SetWorkingDir, %A_ScriptDir%
 
 #Include C:\ForeverYours\Coding\Scripts\AutoHotKey
 
-#Include [M] Shell.ahk
+#Include (M) Shell.ahk
 
 
 ; --- Apps
