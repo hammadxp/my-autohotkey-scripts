@@ -1,11 +1,13 @@
-;Ctrl Key ^  |  Shift Key +  |  Alt Key !  |  Windows Key #
+; Ctrl (^), Shift (+), Alt Key (!), Windows (#)
+
+; Global variable
 
 global chrome_apps := "C:\Users\Hammad\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps"
 global inspiration_folder := "C:\ForeverYours\Coding\Web Development\Photos\Inspiration"
 global screenshots_move_to := "C:\ForeverYours\Screenshots\Screenshots (Acer)"
 global moments_folder := "C:\ForeverYours\Screenshots\Screenshots (Moments)"
 
-; --- Include Scripts
+; Include scripts
 
 #Include C:\ForeverYours\Coding\Scripts\AutoHotKey
 
