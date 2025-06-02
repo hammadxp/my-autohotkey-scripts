@@ -38,7 +38,7 @@ addTextToCMDSessions() {
     ClipWait
 
     CurrentDateTime := FormatTime(, "(yyyyMMdd-HHmmss)")
-    FileAppend(A_Clipboard "`n", "C:\ForeverYours\Documents\Logs\" CurrentDateTime ".txt")
+    FileAppend(A_Clipboard "`n", "D:\Documents\Logs\" CurrentDateTime ".txt")
     return
 }
 
@@ -78,3 +78,9 @@ liftRightKey() {
         Send("{Right}")
     return
 }
+
+; Recycled
+
+; 02 Jun 2025
+
+; FileAppend(A_Clipboard "`n", "C:\ForeverYours\Documents\Logs\" CurrentDateTime ".txt")

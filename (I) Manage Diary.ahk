@@ -9,8 +9,7 @@
     minute := FormatTime(, "HH:mm")
     CurrentDateTime := FormatTime(, "yyyy-MM-dd (dddd, dd MMMM yyyy)")
     A_Clipboard := StrReplace(A_Clipboard, "`r`n`r`n", "`r`n")
-    ; fileappend A_Clipboard " [" minute "]`n", "C:\ForeverYours\Documents\Diary\Diary (Acer)\" CurrentDateTime ".txt"
-    fileappend A_Clipboard " [" minute "]`n", "C:\ForeverYours\Documents\Obsidian\WhatVault\📔 Diary\📁 Diary (Acer)\" CurrentDateTime ".md"
+    fileappend A_Clipboard " [" minute "]`n", "D:\Documents\Obsidian\WhatVault\📔 Diary\📁 Diary (Acer)\" CurrentDateTime ".md"
     SendEvent("!{F4}")
     return
 }
@@ -33,16 +32,27 @@ addToDiaryNope() {
 
 openDiary() {
     CurrentDateTime := FormatTime(, "yyyy-MM-dd (dddd, dd MMMM yyyy)")
-    ;Run, C:\ForeverYours\Documents\Obsidian\WhatVault\? Diary\?? Diary (Acer)\%CurrentDateTime%.txt
-    ; Run("C:\ForeverYours\Documents\Diary\Diary (Acer)\" CurrentDateTime ".txt")
-    Run("C:\ForeverYours\Documents\Obsidian\WhatVault\📔 Diary\📁 Diary (Acer)\" CurrentDateTime ".md")
-    ; Sleep(500)
-    ; Send("^{End}")
+    Run("D:\Documents\Obsidian\WhatVault\📔 Diary\📁 Diary (Acer)\" CurrentDateTime ".md")
 }
 
 openDiaryNope() {
     CurrentDateTime := FormatTime(, "yyyy-MM-dd (dddd, dd MMMM yyyy)")
     Run("D:\Other Stuff\Nope\(Other)\Diary (Acer)\" CurrentDateTime ".txt")
-    ; Sleep(500)
-    ; Send("^{End}")
 }
+
+; Recycled
+
+; Previous
+
+; fileappend A_Clipboard " [" minute "]`n", "C:\ForeverYours\Documents\Diary\Diary (Acer)\" CurrentDateTime ".txt"
+
+; Run, C:\ForeverYours\Documents\Obsidian\WhatVault\? Diary\?? Diary (Acer)\%CurrentDateTime%.txt
+; Run("C:\ForeverYours\Documents\Diary\Diary (Acer)\" CurrentDateTime ".txt")
+
+; Sleep(500)
+; Send("^{End}")
+
+; 02 Jun 2025
+
+; fileappend A_Clipboard " [" minute "]`n", "C:\ForeverYours\Documents\Obsidian\WhatVault\📔 Diary\📁 Diary (Acer)\" CurrentDateTime ".md"
+; Run("C:\ForeverYours\Documents\Obsidian\WhatVault\📔 Diary\📁 Diary (Acer)\" CurrentDateTime ".md")

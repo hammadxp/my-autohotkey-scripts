@@ -1,7 +1,7 @@
 ﻿; Simple Apps
 
 openCommandPrompt() {
-    Run("C:\ForeverYours\Apps\Shortcuts\Shortcuts\Command Prompt.lnk")
+    Run("D:\Apps\Shortcuts\Shortcuts\Command Prompt.lnk")
 }
 
 openEverythingApp() {
@@ -25,7 +25,7 @@ openMp3Tag() {
 }
 
 openNotepad() {
-    Run("C:\ForeverYours\Apps\Shortcuts\Shortcuts\Notepad")
+    Run("D:\Apps\Shortcuts\Shortcuts\Notepad")
 }
 
 openOBSStudio() {
@@ -37,7 +37,7 @@ openQBittorrent() {
 }
 
 openTaskManager() {
-    Run("C:\ForeverYours\Apps\Shortcuts\Shortcuts\Task Manager.lnk")
+    Run("D:\Apps\Shortcuts\Shortcuts\Task Manager.lnk")
 }
 
 openVLC() {
@@ -45,7 +45,6 @@ openVLC() {
 }
 
 openVSCode() {
-    ; ShellRun("C:\Users\Hammad\AppData\Local\Programs\Microsoft VS Code\Code.exe")
     Run("C:\Users\Hammad\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 }
 
@@ -84,3 +83,15 @@ openWhyAhmadiWebApp() {
 openYouTubeWebApp() {
     Run(chromeAppsFolder "\YouTube")
 }
+
+; Recycled
+
+; Previous
+
+; ShellRun("C:\Users\Hammad\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+
+; 02 Jun 2025
+
+; Run("C:\ForeverYours\Apps\Shortcuts\Shortcuts\Command Prompt.lnk")
+; Run("C:\ForeverYours\Apps\Shortcuts\Shortcuts\Notepad")
+; Run("C:\ForeverYours\Apps\Shortcuts\Shortcuts\Task Manager.lnk")

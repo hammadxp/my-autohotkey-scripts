@@ -55,6 +55,12 @@ setRandomWallpaper(folderPath) {
 }
 
 updateTimeBasedWallpaper() {
-    RunWait('pythonw.exe "C:\ForeverYours\Coding\Scripts\Scripts\[Wallpaper] Update time based wallpaper.py"')
+    RunWait('pythonw.exe "D:\Coding\Scripts\Scripts\[Wallpaper] Update time based wallpaper.py"')
     return
 }
+
+; Recycled
+
+; 02 Jun 2025
+
+; RunWait('pythonw.exe "C:\ForeverYours\Coding\Scripts\Scripts\[Wallpaper] Update time based wallpaper.py"')

@@ -3,11 +3,11 @@
 }
 
 runUnifyForSpotifyScript() {
-    Run("C:\ForeverYours\Coding\Shared\unify-for-spotify\script.py")
+    Run("D:\Coding\Shared\unify-for-spotify\script.py")
 }
 
 runUnifyForSpotifyScriptv2() {
-    Run('wt --startingDirectory "C:\ForeverYours\Coding\Shared\unify-for-spotify"')
+    Run('wt --startingDirectory "D:\Coding\Shared\unify-for-spotify"')
     Sleep(2000)
     SetTitleMatchMode(2)
     if (WinExist("Command Prompt (VS Code)")) {
@@ -31,3 +31,10 @@ runHotspotToggleOnScript() {
 runScriptsRunnerScript() {
     Run(scriptsFolder "\[Run] Scripts.bat")
 }
+
+; Recycled
+
+; 02 Jun 2025
+
+; Run("C:\ForeverYours\Coding\Shared\unify-for-spotify\script.py")
+; Run('wt --startingDirectory "C:\ForeverYours\Coding\Shared\unify-for-spotify"')

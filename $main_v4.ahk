@@ -2,11 +2,11 @@
 
 ; Global variables
 
-global appShortcutsFolder := "C:\ForeverYours\Apps\Shortcuts\Shortcuts"
+global appShortcutsFolder := "D:\Apps\Shortcuts\Shortcuts"
 global chromeAppsFolder := "C:\Users\Hammad\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps"
-global inspirationFolder := "C:\ForeverYours\Coding\Web Development\Photos\Inspiration"
-global screenshotsAcerFolder := "C:\ForeverYours\Temp\Screenshots (Acer)"
-global scriptsFolder := "C:\ForeverYours\Coding\Scripts\Scripts"
+global inspirationFolder := "D:\Coding\Web Development\Photos\Inspiration"
+global screenshotsAcerFolder := "C:\ForeverYours\Screenshots (Acer)"
+global scriptsFolder := "D:\Coding\Scripts\Scripts"
 global startupFolder := "C:\Users\Hammad\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 
 ; Include external scripts
@@ -54,13 +54,13 @@ Home & PgDn:: addToDiaryNope()
 Home & End:: addTextToCMDSessions()
 
 PgUp:: openRecentScreenshots()
-PgUp & RShift:: openFolderInNewTab("C:\ForeverYours\Coding\Scripts\AutoHotKey")
-PgUp & [:: openFolderInNewTab("C:\ForeverYours\Coding\Scripts\Scripts")
+PgUp & RShift:: openFolderInNewTab("D:\Coding\Scripts\AutoHotKey")
+PgUp & [:: openFolderInNewTab("D:\Coding\Scripts\Scripts")
 PgUp & ]:: runScriptsRunnerScript()
 PgUp & ':: runUnifyForSpotifyScript()
 PgUp & \:: runUnifyForSpotifyScriptv2()
 
-PgDn:: openFolderInNewTab("C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
+PgDn:: openFolderInNewTab("C:\ForeverYours\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
 )
 PgDn & \:: moveSelectedScreenshots()
 PgDn & Enter:: openFolderInNewTab("D:\Screenshots\Screenshots (Acer)")
@@ -72,27 +72,27 @@ End:: closeActiveWindow()
 
 CapsLock & a:: openFolderInNewTab("C:\Users\Hammad\AppData")
 CapsLock & b:: openFolderInNewTab("D:\Backups")
-CapsLock & c:: openFolderInNewTab("C:\ForeverYours\Coding")
+CapsLock & c:: openFolderInNewTab("D:\Coding")
 CapsLock & d:: openFolderInNewTab("D:\")
-CapsLock & e:: openFolderInNewTab("C:\ForeverYours\Apps\Shortcuts\Applications")
+CapsLock & e:: openFolderInNewTab("D:\Apps\Shortcuts\Applications")
 CapsLock & f:: openFolderInNewTab("C:\ForeverYours")
 CapsLock & g:: openFolderInNewTab("D:\Music\(Other)\Geet")
 CapsLock & h:: openFolderInNewTab("C:\Users\Hammad")
-CapsLock & i:: openFolderInNewTab("C:\ForeverYours\Apps\[Server Apps]\immich-app")
-CapsLock & j:: openFolderInNewTab("C:\ForeverYours\Temp")
+CapsLock & i:: openFolderInNewTab("D:\Apps\[Server Apps]\immich-app")
+CapsLock & j:: openFolderInNewTab("C:\ForeverYours")
 CapsLock & l:: openFolderInNewTab("D:\Photos\Screenshots (Moments)")
 CapsLock & m:: openFolderInNewTab("D:\Music")
 CapsLock & o:: openFolderInNewTab("D:\Devices\My Android")
 CapsLock & p:: openFolderInNewTab("D:\Photos")
-CapsLock & r:: openFolderInNewTab("C:\ForeverYours\Temp\Restored")
+CapsLock & r:: openFolderInNewTab("C:\ForeverYours\Restored")
 CapsLock & s:: openFolderInNewTab("C:\Users\Hammad\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup")
 CapsLock & t:: openFolderInNewTab("D:\Movies and TV Shows\Good Stuff\Torrents")
-CapsLock & u:: openFolderInNewTab("C:\ForeverYours\Coding\Web Development")
-CapsLock & v:: openFolderInNewTab("C:\ForeverYours\Documents\Hammad")
+CapsLock & u:: openFolderInNewTab("D:\Coding\Web Development")
+CapsLock & v:: openFolderInNewTab("D:\Documents\Hammad")
 CapsLock & w:: openFolderInNewTab("D:\Photos\Camera (OnePlus) (Photos)")
-CapsLock & x:: openFolderInNewTab("C:\ForeverYours\Coding\Scripts")
-CapsLock & y:: Run("C:\ForeverYours\Apps\Shortcuts\Shortcuts\Recycle Bin")
-CapsLock & z:: openFolderInNewTab("C:\ForeverYours\Coding\Test")
+CapsLock & x:: openFolderInNewTab("D:\Coding\Scripts")
+CapsLock & y:: Run("D:\Apps\Shortcuts\Shortcuts\Recycle Bin")
+CapsLock & z:: openFolderInNewTab("D:\Coding\Test")
 CapsLock & 1:: openFolderInNewTab("M:\")
 CapsLock & 2:: openFolderInNewTab("N:\")
 CapsLock & [:: openDiary()
@@ -100,10 +100,10 @@ CapsLock & ]:: openDiaryNope()
 
 ; Dot (for files)
 
-. & l:: openFile("C:\ForeverYours\Apps\Files (InUse)\01. Lets Start.jpg")
-. & k:: openFile("C:\ForeverYours\Apps\Files (InUse)\02. Continue.jpg")
-. & j:: openFile("C:\ForeverYours\Apps\Files (InUse)\03. Khaana Done.jpg")
-. & h:: openFile("C:\ForeverYours\Apps\Files (InUse)\05. Chatt Te.jpg")
+. & l:: openFile("D:\Apps\Files (InUse)\01. Lets Start.jpg")
+. & k:: openFile("D:\Apps\Files (InUse)\02. Continue.jpg")
+. & j:: openFile("D:\Apps\Files (InUse)\03. Khaana Done.jpg")
+. & h:: openFile("D:\Apps\Files (InUse)\05. Chatt Te.jpg")
 
 ; Alt (for apps)
 
@@ -162,12 +162,12 @@ CapsLock & ]:: openDiaryNope()
 #!F6:: runHotspotToggleOnScript()
 #!F8:: runDownOnSpotForSpotifyScript()
 #!F9:: runUnifyForSpotifyScript()
-#!1:: setWallpaperWithIrfanView("C:\ForeverYours\Temp\Restored\IMG_20230122_085425.jpg")
-#!2:: setWallpaperWithIrfanView("C:\ForeverYours\Temp\Restored\IMG_20221216_133916~2.jpg")
-#!3:: setWallpaperWithIrfanView("C:\ForeverYours\Temp\Restored\img_20240904_165829.jpg")
-#!4:: setWallpaperWithIrfanView("C:\ForeverYours\Temp\Restored\PXL_20240311_144501302.NIGHT.jpg")
+#!1:: setWallpaperWithIrfanView("C:\ForeverYours\Restored\IMG_20230122_085425.jpg")
+#!2:: setWallpaperWithIrfanView("C:\ForeverYours\Restored\IMG_20221216_133916~2.jpg")
+#!3:: setWallpaperWithIrfanView("C:\ForeverYours\Restored\img_20240904_165829.jpg")
+#!4:: setWallpaperWithIrfanView("C:\ForeverYours\Restored\PXL_20240311_144501302.NIGHT.jpg")
 #!5:: setSelectedPhotoAsWallpaper()
-#!6:: setRandomWallpaper("C:\ForeverYours\Temp\Restored")
+#!6:: setRandomWallpaper("C:\ForeverYours\Restored")
 #!7:: updateTimeBasedWallpaper()
 
 ; --- Recycled

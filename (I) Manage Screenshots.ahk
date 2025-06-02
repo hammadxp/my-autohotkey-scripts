@@ -6,7 +6,7 @@ openRecentScreenshot() {
     Time := 0
     File := ""
 
-    screenshotsFolderToday := "C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
+    screenshotsFolderToday := "C:\ForeverYours\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
 
     loop files screenshotsFolderToday "\*.*" {
         if (A_LoopFileTimeModified >= Time) {
@@ -21,7 +21,7 @@ openRecentScreenshot() {
 }
 
 openRecentScreenshots() {
-    screenshotsFolderToday := "C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
+    screenshotsFolderToday := "C:\ForeverYours\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
     screenshots := []
 
     loop files screenshotsFolderToday "\*.*" {
@@ -51,7 +51,7 @@ deleteRecentScreenshot() {
     Time := 0
     File := ""
 
-    screenshotsFolderToday := "C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
+    screenshotsFolderToday := "C:\ForeverYours\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
 
     loop files screenshotsFolderToday "\*.*"
         if (A_LoopFileTimeModified >= Time) {
@@ -71,7 +71,7 @@ deleteSecondRecentScreenshot() {
     SecondLatestTime := 0
     SecondLatestFile := ""
 
-    screenshotsFolderToday := "C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
+    screenshotsFolderToday := "C:\ForeverYours\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
 
     loop files screenshotsFolderToday "\*.*" {
         if (A_LoopFileTimeModified >= LatestTime) {
@@ -101,9 +101,6 @@ addScreenshotToMoments() {
         ClipWait
 
         loop parse A_Clipboard, "`n", "`r" {
-            ; FileCopy, A_LoopField, C:\ForeverYours\Temp\Screenshots (Moments) (Acer)
-            ; FileCopy, A_LoopField, C:\ForeverYours\Screenshots\Screenshots (Moments) (Acer)
-            ; FileCopy, A_LoopField, C:\ForeverYours\Screenshots\Screenshots (Moments) (Acer) (Unconfirmed)
             FileCopy A_LoopField, "D:\Photos\Screenshots (Moments)"
         }
     }
@@ -125,3 +122,18 @@ moveSelectedScreenshots() {
     }
     return
 }
+
+; Recycled
+
+; Previous
+
+; FileCopy, A_LoopField, C:\ForeverYours\Temp\Screenshots (Moments) (Acer)
+; FileCopy, A_LoopField, C:\ForeverYours\Screenshots\Screenshots (Moments) (Acer)
+; FileCopy, A_LoopField, C:\ForeverYours\Screenshots\Screenshots (Moments) (Acer) (Unconfirmed)
+
+; 02 Jun 2025
+
+; screenshotsFolderToday := "C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
+; screenshotsFolderToday := "C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
+; screenshotsFolderToday := "C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
+; screenshotsFolderToday := "C:\ForeverYours\Temp\Screenshots (Acer)\(" A_Year " - " Format("{:02}", A_Mon) ") " A_DD " " A_MMMM
