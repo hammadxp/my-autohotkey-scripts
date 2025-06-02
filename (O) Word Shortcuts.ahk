@@ -1,93 +1,101 @@
-; ---
-
 ; o -> means no space after expansion
 ; R*? -> means expand instantly without hitting space bar
 
-::cc::
-  SendInput, �
-  return
+::cc:: {
+    SendInput("�")
+}
 
-::dd::
-  SendInput, download {}
-  return
+::dd:: {
+    SendInput("download")
+}
 
-::ff::
-  SendInput, 26February
-  return
+::ddd:: {
+    CurrentDateTime := FormatTime(, "yyyyMMdd")
+    SendInput(CurrentDateTime)
+}
 
-::hh::
-  SendInput, hammad9860
-  return
+::dddd:: {
+    CurrentDateTime := FormatTime(, "yyyyMMdd-HHmmss")
+    SendInput(CurrentDateTime)
+}
 
-::hj::
-  SendInput, hammadjaved9860@gmail.com
-  return
+; :R*?:ddddd::
+::ddddd:: {
+    CurrentDateTime := FormatTime(, "(yyyyMMdd-HHmmss)")
+    SendInput(CurrentDateTime)
+}
 
-::lll::
-  SendInput, yt-dlp {}
-  return
+::ff:: {
+    SendInput("26February")
+}
 
-::qq::
-  SendInput, ?
-  return
+::fff:: {
+    CurrentDateTime := FormatTime(, "dd MMM yyyy")
+    SendInput(CurrentDateTime)
+}
 
-::rc::
-  SendInput, rclone {}
-  return
+::ffff:: {
+    CurrentDateTime := FormatTime(, "dd MMM yyyy (HH.mm)")
+    SendInput(CurrentDateTime)
+}
 
-::ss::
-  SendInput, down_on_spot {}
-  return
+; :R*?:fffff:: {
+::fffff:: {
+    CurrentDateTime := FormatTime(, "yyyy-MM-dd (dddd, dd MMMM yyyy)")
+    SendInput(CurrentDateTime)
+}
+
+::hh:: {
+    SendInput("hammadxp")
+}
+
+::hj:: {
+    SendInput("hammadjaved9860@gmail.com")
+}
+
+; ::lll::
+;   SendInput("yt-dlp {}")
+
+::lll:: {
+    SendInput('yt-dlp --config-locations "D:\Other Stuff\yt-dlp\(configs)\yt-dlp (*).conf"')
+}
+
+::llll:: {
+    SendInput('yt-dlp --config-locations "D:\Other Stuff\yt-dlp\(configs)\yt-dlp (playlist_1080p).conf"')
+}
+
+::ooo:: {
+    CurrentDateTime := FormatTime(, "**dd MMM yyyy**")
+    SendInput(CurrentDateTime)
+    Send("{Enter}")
+}
+
+::oooo:: {
+    SendInput('<span class="" style=""></span>')
+}
+
+::qq:: {
+    SendInput("?")
+}
+
+::ttt:: {
+    CurrentDateTime := FormatTime(, "[HH:mm]")
+    SendInput("CurrentDateTime ")
+}
+
+; :R*?:tttt::
+::tttt:: {
+    CurrentDateTime := FormatTime(, "d-MM (ddd)")
+    SendInput CurrentDateTime
+    Send("{Enter}")
+    Send("{Enter}")
+    Send("{Enter}")
+    Send("{Up}")
+    Send("{Up}")
+}
 
 ; ---
 
-::ddd::
-  FormatTime, CurrentDateTime,, [yyyy-MM-dd]
-  SendInput %CurrentDateTime% {}
-  return
-
-:R*?:dddd::
-  FormatTime, CurrentDateTime,, [yyyy-MM-dd] [HH.mm]
-  SendInput %CurrentDateTime% {}
-  return
-
-:R*?:ffff::
-  FormatTime, CurrentDateTime,, yyyy-MM-dd (dddd, dd MMMM yyyy)
-  SendInput %CurrentDateTime%
-  return
-
-::llll::
-  SendInput, yt-dlp --config-locations "D:\Other Stuff\youtube-dl\(configs)\youtube-dl (*).conf"
-  return
-
-::lllll::
-  SendInput, yt-dlp --config-locations "D:\Other Stuff\youtube-dl\(configs)\youtube-dl (playlist_1080p).conf"
-  return
-
-::ooo::
-  FormatTime, CurrentDateTime,, **dd MMM yyyy**
-  SendInput %CurrentDateTime%
-  Send, {Enter}
-  Send, -{Space}
-  return
-
-:R*?:uuu::
-  SendInput, py "D:\Coding\Scripts\Scripts (Shared)\Unify For Spotify\script.py"
-  return
-
-::ttt::
-  FormatTime, CurrentDateTime,, [HH:mm]
-  SendInput %CurrentDateTime% {}
-  return
-
-:R*?:tttt::
-  FormatTime, CurrentDateTime,, d-MM (ddd)
-  SendInput %CurrentDateTime%
-  Send, {Enter}
-  Send, {Enter}
-  Send, {Enter}
-  Send, {Up}
-  Send, {Up}
-  return
-
-; ---
+::nc:: {
+    SendInput("Nic Salt E-liquid")
+}
