@@ -37,20 +37,26 @@ setOpenPhotoAsWallpaperInIrfanView() {
 }
 
 setRandomWallpaper(folderPath) {
-    wallpaperFolders := [folderPath]
+    wallpaperFolders := Type(folderPath) = "Array" ? folderPath : [folderPath]
+
     wallpapers := []
 
-    for wallpaperFolder in wallpaperFolders {
+    for _, wallpaperFolder in wallpaperFolders {
         loop files wallpaperFolder "\*.*", "F" {
             wallpaper := A_LoopFileFullPath
             wallpapers.Push(wallpaper)
         }
     }
 
+    if wallpapers.Length = 0 {
+        MsgBox "No wallpapers found in the given folder(s)."
+        return
+    }
+
     randomIndex := Random(1, wallpapers.Length)
     selectedWallpaper := wallpapers[randomIndex]
 
-    RunWait("i_view64.exe " selectedWallpaper " / wall = 7 / killmesoftly")
+    RunWait("i_view64.exe " selectedWallpaper " /wall=7 /killmesoftly")
     return
 }
 

@@ -1,10 +1,18 @@
-﻿; Simple Apps
+﻿openChromeWithoutExtensions() {
+    Run("D:\Documents\Shortcuts\Chrome (--disable - extensions).lnk")
+}
 
 openCommandPrompt() {
     Run("D:\Apps\Shortcuts\Shortcuts\Command Prompt.lnk")
 }
 
-openEverythingApp() {
+openControlPanelProgramsSection() {
+    Send("#x")
+    Sleep(500)
+    Send("p")
+}
+
+openEverything() {
     Run("C:\Program Files\Everything\Everything.exe")
 }
 
@@ -36,6 +44,10 @@ openQBittorrent() {
     Run("C:\Program Files\qBittorrent\qbittorrent.exe")
 }
 
+openSnapTool() {
+    Send("#+s")
+}
+
 openTaskManager() {
     Run("D:\Apps\Shortcuts\Shortcuts\Task Manager.lnk")
 }
@@ -48,40 +60,8 @@ openVSCode() {
     Run("C:\Users\Hammad\AppData\Local\Programs\Microsoft VS Code\Code.exe")
 }
 
-runChromeWithoutExtensions() {
-    Run("D:\Documents\Shortcuts\Chrome (--disable - extensions).lnk")
-}
-
-openSnapTool() {
-    Send("#+s")
-}
-
-openControlPanelProgramsSection() {
-    Send("#x")
-    Sleep(500)
-    Send("p")
-}
-
-; Chrome Web Apps
-
-openDiscordWebApp() {
-    Run(chromeAppsFolder "\Discord")
-}
-
-openInstagramWebApp() {
-    Run(chromeAppsFolder "\Instagram")
-}
-
-openPlexWebApp() {
-    Run(chromeAppsFolder "\Plex (New)")
-}
-
-openWhyAhmadiWebApp() {
-    Run(chromeAppsFolder "\WhyAhmadi")
-}
-
-openYouTubeWebApp() {
-    Run(chromeAppsFolder "\YouTube")
+openYoutubeDL() {
+    Run('C:\Windows\System32\cmd.exe /K "cd /d D:\Other Stuff\youtube-dl"')
 }
 
 ; Recycled

@@ -19,7 +19,6 @@
     SendInput(CurrentDateTime)
 }
 
-; :R*?:ddddd::
 ::ddddd:: {
     CurrentDateTime := FormatTime(, "(yyyyMMdd-HHmmss)")
     SendInput(CurrentDateTime)
@@ -53,15 +52,16 @@
     SendInput("hammadjaved9860@gmail.com")
 }
 
-; ::lll::
-;   SendInput("yt-dlp {}")
-
 ::lll:: {
     SendInput('yt-dlp --config-locations "D:\Other Stuff\yt-dlp\(configs)\yt-dlp (*).conf"')
 }
 
 ::llll:: {
     SendInput('yt-dlp --config-locations "D:\Other Stuff\yt-dlp\(configs)\yt-dlp (playlist_1080p).conf"')
+}
+
+::nc:: {
+    SendInput("Nic Salt E-liquid")
 }
 
 ::ooo:: {
@@ -83,7 +83,6 @@
     SendInput("CurrentDateTime ")
 }
 
-; :R*?:tttt::
 ::tttt:: {
     CurrentDateTime := FormatTime(, "d-MM (ddd)")
     SendInput CurrentDateTime
@@ -94,8 +93,23 @@
     Send("{Up}")
 }
 
-; ---
-
-::nc:: {
-    SendInput("Nic Salt E-liquid")
+::480pp:: {
+    SendInput('youtube-dl -f "bestvideo[height<=480][ext=mp4]{+}bestaudio[ext=m4a]" ')
 }
+
+::1080pp:: {
+    SendInput('youtube-dl -f "bestvideo[height<=1080][ext=mp4]{+}bestaudio[ext=m4a]" ')
+}
+
+; Recycled
+
+; ?
+
+; :R*?:ddddd::
+
+; ::lll::
+;   SendInput("yt-dlp {}")
+
+; :R*?:tttt::
+
+; ---
